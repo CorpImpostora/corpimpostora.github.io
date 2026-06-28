@@ -58,27 +58,71 @@
         .game-card {
             background-color: #1a1a1e;
             border-radius: 10px;
-            padding: 25px;
+            padding: 35px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             border: 1px solid #2a2a30;
             margin-top: 20px;
         }
         .game-title {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-top: 0;
-            color: #3498db;
+            color: #ff4757;
+            font-weight: bold;
         }
-        .embed-container {
-            margin-top: 20px;
+        .game-description {
+            color: #e0e0e0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+        
+        /* Contenedor para alinear los botones de lado a lado */
+        .buttons-container {
             display: flex;
             justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Hace que se acomoden bien en celulares */
         }
-        iframe {
-            max-width: 100%;
-            border-radius: 5px;
+
+        /* Botón Estilo GitHub (Descarga Directa) */
+        .btn-github {
+            background-color: #24292e; 
+            color: white; 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            font-size: 1.1rem; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            border: 1px solid #444d56;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
+            display: inline-block; 
+            transition: transform 0.2s, background-color 0.3s;
         }
+        .btn-github:hover {
+            background-color: #2f363d;
+            transform: scale(1.03);
+        }
+
+        /* Botón Estilo itch.io (Enlace Externo) */
+        .btn-itch {
+            background-color: #fa5c5c; 
+            color: white; 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            font-size: 1.1rem; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            box-shadow: 0 4px 15px rgba(250, 92, 92, 0.3); 
+            display: inline-block; 
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        .btn-itch:hover {
+            background-color: #ff4757;
+            transform: scale(1.03);
+        }
+
         footer {
-            margin-top: 80px;
+            margin-top: 100px;
             padding: 20px;
             background-color: #1a1a1e;
             color: #666;
@@ -96,14 +140,21 @@
         </ul>
     </nav>
 
-    <!-- SECCIÓN DE DESCARGAS EXCLUSIVA -->
     <section class="section">
         <div class="game-card">
             <h2 class="game-title">Figure´s World</h2>
-            <p>Acompaña a Frank cubo, Oscar circulo y José triangulo en una gran aventura para descubrir los secretos de la misteriosa guerra de las figuras y la mina de la muerte.</p>
+            <p class="game-description">Acompaña a Frank cubo, Oscar circulo y José triangulo en una gran aventura para descubrir los secretos de la misteriosa guerra de las figuras y la mina de la muerte.</p>
             
-            <div class="embed-container">
-                <iframe frameborder="0" src="https://itch.io" width="552" height="167"><a href="https://itch.io">Figure´s World by Corp. Impostora</a></iframe>
+            <div class="buttons-container">
+                <!-- BOTÓN 1: Descarga desde GitHub. Reemplaza "FiguresWorld_Windows.zip" por el nombre exacto de tu archivo si cambia -->
+                <a href="FiguresWorld_Windows.zip" download class="btn-github">
+                    💾 Descargar Directo (GitHub)
+                </a>
+
+                <!-- BOTÓN 2: Enlace a itch.io -->
+                <a href="https://itch.io" target="_blank" class="btn-itch">
+                    🕹️ Ver en itch.io
+                </a>
             </div>
         </div>
     </section>
