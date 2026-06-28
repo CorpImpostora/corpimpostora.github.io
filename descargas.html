@@ -50,7 +50,7 @@
             color: #ff4757;
         }
         .section {
-            padding: 60px 20px;
+            padding: 40px 20px;
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
@@ -61,7 +61,13 @@
             padding: 35px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             border: 1px solid #2a2a30;
-            margin-top: 20px;
+            margin-bottom: 40px; /* Espacio abajo de cada tarjeta */
+        }
+        .card-title-itch {
+            font-size: 2rem;
+            margin-top: 0;
+            color: #fa5c5c;
+            font-weight: bold;
         }
         .game-title {
             font-size: 2rem;
@@ -69,22 +75,26 @@
             color: #ff4757;
             font-weight: bold;
         }
+        .section-subtitle {
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin: 40px 0 20px 0;
+            text-align: left;
+            border-bottom: 2px solid #2a2a30;
+            padding-bottom: 10px;
+        }
         .game-description {
             color: #e0e0e0;
             font-size: 1.1rem;
             line-height: 1.6;
-            margin-bottom: 35px;
+            margin-bottom: 30px;
         }
-        
-        /* Contenedor para alinear los botones de lado a lado */
         .buttons-container {
             display: flex;
             justify-content: center;
             gap: 20px;
-            flex-wrap: wrap; /* Hace que se acomoden bien en celulares */
+            flex-wrap: wrap;
         }
-
-        /* Botón Estilo GitHub (Descarga Directa) */
         .btn-github {
             background-color: #24292e; 
             color: white; 
@@ -102,8 +112,6 @@
             background-color: #2f363d;
             transform: scale(1.03);
         }
-
-        /* Botón Estilo itch.io (Enlace Externo) */
         .btn-itch {
             background-color: #fa5c5c; 
             color: white; 
@@ -120,9 +128,8 @@
             background-color: #ff4757;
             transform: scale(1.03);
         }
-
         footer {
-            margin-top: 100px;
+            margin-top: 80px;
             padding: 20px;
             background-color: #1a1a1e;
             color: #666;
@@ -141,22 +148,39 @@
     </nav>
 
     <section class="section">
+        
+        <!-- 1. APARTADO DE ITCH.IO AL PRINCIPIO -->
+        <div class="game-card">
+            <h2 class="card-title-itch">Itch.io página oficial</h2>
+            <p class="game-description">Visita nuestro perfil oficial en itch.io para conocer todos nuestros proyectos, actualizaciones y lanzamientos en la comunidad de desarrollo independiente.</p>
+            <div>
+                <a href="https://itch.io" target="_blank" class="btn-itch">
+                    🕹️ corp-impostora.itch.io
+                </a>
+            </div>
+        </div>
+
+        <!-- 2. TEXTO QUE DICE "Juegos" -->
+        <h2 class="section-subtitle">Juegos</h2>
+
+        <!-- 3. APARTADO DEL JUEGO FIGURES WORLD -->
         <div class="game-card">
             <h2 class="game-title">Figure´s World</h2>
             <p class="game-description">Acompaña a Frank cubo, Oscar circulo y José triangulo en una gran aventura para descubrir los secretos de la misteriosa guerra de las figuras y la mina de la muerte.</p>
             
             <div class="buttons-container">
-                <!-- BOTÓN 1: Descarga desde GitHub. Reemplaza "FiguresWorld_Windows.zip" por el nombre exacto de tu archivo si cambia -->
-                <a href="FiguresWorld_Windows.zip" download class="btn-github">
+                <!-- Botón de descarga directa apuntando a tu archivo Figures_World.zip -->
+                <a href="Figures_World.zip" download class="btn-github">
                     💾 Descargar Directo (GitHub)
                 </a>
 
-                <!-- BOTÓN 2: Enlace a itch.io -->
-                <a href="https://itch.io" target="_blank" class="btn-itch">
+                <!-- Botón que lleva a la página específica del juego -->
+                <a href="https://itch.io/figures-world" target="_blank" class="btn-itch">
                     🕹️ Ver en itch.io
                 </a>
             </div>
         </div>
+
     </section>
 
     <footer>
