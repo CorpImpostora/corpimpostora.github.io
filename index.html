@@ -147,7 +147,76 @@
             color: #ff2a3b;
             text-decoration: underline;
         }
+        /* Contenedor tipo tarjeta para los enlaces oficiales */
+        .links-card {
+            background-color: #1a1a1e;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid #2a2a30;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
 
+        .links-title {
+            font-size: 1.6rem;
+            color: #ff4757;
+            margin-top: 0;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #2a2a30;
+            padding-bottom: 8px;
+            font-weight: bold;
+            text-align: left; /* Alineado a la izquierda como las reglas */
+        }
+
+        /* Contenedor para ordenar los botones de forma vertical u horizontal */
+        .links-list {
+            display: flex;
+            flex-direction: column; /* Organizados uno debajo del otro */
+            gap: 15px;
+            max-width: 400px; /* Ancho controlado para que no ocupe toda la pantalla */
+            margin: 0 auto;
+        }
+
+        .btn-platform {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 14px 20px;
+            border-radius: 6px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn-platform:hover {
+            transform: scale(1.03);
+        }
+
+        /* Colores específicos de cada marca con su respectivo brillo */
+        .btn-youtube {
+            background-color: #ff0000;
+        }
+        .btn-youtube:hover {
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+        }
+
+        .btn-curseforge {
+            background-color: #f16436;
+        }
+        .btn-curseforge:hover {
+            box-shadow: 0 0 15px rgba(241, 100, 54, 0.5);
+        }
+
+        .btn-itchio {
+            background-color: #fa5c5c;
+        }
+        .btn-itchio:hover {
+            box-shadow: 0 0 15px rgba(250, 92, 92, 0.5);
+        }
         footer {
             margin-top: 100px;
             padding: 20px;
@@ -216,6 +285,28 @@
             </script>
 
         </div>
+                <!-- APARTADO DE ENLACES OFICIALES (EN RECUADRO) -->
+        <div class="links-card">
+            <h2 class="links-title">Plataformas Oficiales</h2>
+            
+            <div class="links-list">
+                <!-- 1. BOTÓN DE YOUTUBE -->
+                <a href="https://www.youtube.com/@Corp.impostora" target="_blank" class="btn-platform btn-youtube">
+                    📺 YouTube (Entretenimiento)
+                </a>
+
+                <!-- 2. BOTÓN DE CURSEFORGE -->
+                <a href="https://www.curseforge.com/members/imposter_green9999/projects" target="_blank" class="btn-platform btn-curseforge">
+                    🔥 CurseForge (MC Mods)
+                </a>
+
+                <!-- 3. BOTÓN DE ITCH.IO -->
+                <a href="https://corp-impostora.itch.io/" class="btn-platform btn-itchio">
+                    🕹️ Itch.io (Descargas)
+                </a>
+            </div>
+        </div>
+
 
     </section>
 
