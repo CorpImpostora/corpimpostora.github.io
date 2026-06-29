@@ -253,6 +253,52 @@
     color: #e0e0e0;
     margin: 0;
 }
+        .faq-section {
+    margin-top: 30px;
+    text-align: left;
+}
+details {
+    background-color: #1a1a1e;
+    border: 1px solid #2a2a30;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+details[open] {
+    border-color: #ff4757;
+}
+summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    list-style: none; /* Quita la flecha por defecto */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::after {
+    content: "＋";
+    color: #ff4757;
+    font-size: 1.2rem;
+}
+details[open] summary::after {
+    content: "📋";
+}
+.faq-content {
+    margin-top: 12px;
+    color: #cccccc;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    border-top: 1px solid #2a2a30;
+    padding-top: 10px;
+}
+
 
         footer {
             margin-top: 100px;
@@ -364,7 +410,32 @@
             </div>
         </div>
 
+        <div class="faq-section">
+    <h2 class="rules-title">❓ Preguntas Frecuentes</h2>
+    
+    <details>
+        <summary>¿Por qué Windows dice que el juego es sospechoso?</summary>
+        <div class="faq-content">
+            Como somos desarrolladores independientes y no pagamos una licencia de miles de dólares a Microsoft, Windows no reconoce el archivo. Es 100% seguro. Solo debes dar clic en "Más información" y luego en "Ejecutar de todas formas".
+        </div>
+    </details>
 
+    <details>
+        <summary>¿Cómo instalo el mod de Minecraft?</summary>
+        <div class="faq-content">
+            Primero necesitas tener instalado Forge. Luego, descarga nuestro archivo .jar desde CurseForge, presiona las teclas Win+R, escribe %appdata%/.minecraft/mods y pega el archivo ahí dentro.
+        </div>
+    </details>
+
+    <details>
+        <summary>¿Puedo sugerir ideas para los juegos?</summary>
+        <div class="faq-content">
+            ¡Sí! Como dice nuestra visión, nos encanta agregar cosas hechas por ustedes. Puedes enviarnos tus ideas o diseños al correo oficial de contacto que está arriba.
+        </div>
+    </details>
+</div>
+
+        
     </section>
 
     <footer>
